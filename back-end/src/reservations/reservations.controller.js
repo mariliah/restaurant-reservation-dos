@@ -119,7 +119,7 @@ function notTuesday(req, res, next) {
   const reservationDate = req.body.data.reservation_date;
   const date = new Date(reservationDate);
   const day = date.getDay();
-  if (day === 2) {
+  if (day === 3) {
     next({
       status: 400,
       message: `The restaurant is closed on Tuesdays`,
